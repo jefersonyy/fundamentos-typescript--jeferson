@@ -87,3 +87,16 @@ alert (meuEstado);
 
 let textoEnum: String = Estado [Estado.desabilitado];
 alert("usando o magic number(index) ->" + textoEnum);
+
+///tipo de dados any (qq coisa) 
+let v: any = 2;
+alert(v);
+
+
+
+// como o tipo da variavel é any ele deixa chamar qq metodoque exista
+// por exemplo o to Exponential que é do number, sem avisar erro do comp:
+alert (v.toExponential());
+//agora se tentar chamar qq metodo que nao exste, nao ira ter aviso
+/// so vai ter erro quando executar
+alert(v.toMetod());
