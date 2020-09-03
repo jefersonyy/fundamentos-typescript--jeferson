@@ -115,3 +115,26 @@ function  funcaoTeste(): void {
 
 var teste: void = funcaoTeste();
 alert(teste);
+
+
+
+/// existe  uma configuração do compilador que é 
+// strictnullckeks
+//Ensure that nullabillity is respected in the type ckecker
+// ele verifica que nao pode mais deixar uma var com null  ou undefined
+
+
+
+var teste2: number = null;
+alert(teste2);
+
+
+function somar(a,b){
+    return a +b;
+
+}
+
+
+
+let resultadosoma = somar ("a");
+alert (resultadosoma);
