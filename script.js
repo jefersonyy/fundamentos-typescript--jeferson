@@ -100,3 +100,18 @@ alert (v.toExponential());
 //agora se tentar chamar qq metodo que nao exste, nao ira ter aviso
 /// so vai ter erro quando executar
 alert(v.toMetod());
+
+
+//  tipo de dados void ** sem tipagem **
+// as variaveis do tipo void so podem receber 2 valor null  e undefined 
+
+var teste: void = undefined;
+
+
+// pode-se criar um função void 
+function  funcaoTeste(): void {
+    alert('Olá')
+}
+
+var teste: void = funcaoTeste();
+alert(teste);
