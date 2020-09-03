@@ -129,12 +129,12 @@ var teste2: number = null;
 alert(teste2);
 
 
-function somar(a,b){
+function somar(a: number, b: number){
     return a +b;
 
 }
 
 
 
-let resultadosoma = somar ("a");
+let resultadosoma = somar (5, 6);
 alert (resultadosoma);
