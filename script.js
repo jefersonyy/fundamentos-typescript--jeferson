@@ -1,4 +1,3 @@
-
 var x = 5;
 var y = 9;
 
@@ -68,12 +67,23 @@ let meuArray2: Array<number> = [1,2,3,4];
 // exmplo de tuplas sao os dicionarios 
 /* palavra(string) -> singnificado (string)*/
 
-let campeoBrasileiro [string, number] = ["palmeiras,2016"];
-let campeoBrasileiro1 [string, number] = ["corinthians,2015"];
-let campeoBrasileiro2 [string, number] = ["cruzeiro,2014"];
+let campeoBrasileiro : [string, number] = ["palmeiras,2016"];
+let campeoBrasileiro1: [string, number] = ["corinthians,2015"];
+let campeoBrasileiro2: [string, number] = ["cruzeiro,2014"];
 
 alert (campeoBrasileiro[0] + "-" + campeoBrasileiro[1]);
 
 let campeoBrasileiro3: [string, number] = ["palmeiras",2016]
     campeoBrasileiro3[0] = "teste" 
 alert(campeoBrasileiro3);
+
+
+enum Estado {desabilitado = -1, habilitado};
+
+let meuEstado: Estado = Estado.habilitado;
+alert (meuEstado);
+
+
+
+let textoEnum: String = Estado [Estado.desabilitado];
+alert("usando o magic number(index) ->" + textoEnum);
